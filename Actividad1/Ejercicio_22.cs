@@ -1,17 +1,22 @@
-using System;
+using System.Linq;
 using System.Text;
+using System.Collections.Generic;
+using System.Collections;
 
-class Ejercicio23
+class Ejercicio22
 {
 
-    public static void Main(String[] args)
+    string CaracterDefinitivo(char caracter, int tiempos)
     {
+        StringBuilder constructora = new StringBuilder("");
 
-        StringBuilder ABC =
-        new StringBuilder("Algo de algo");
+        for (int counter = 0; counter < tiempos; counter++)
 
+        {
+            constructora.Append(caracter);
+        }
 
-        Console.WriteLine("String contiene = "
-                          + ABC.ToString());
+        return constructora.ToString();
     }
+
 }
